@@ -91,6 +91,8 @@ body {
     width: 70%;
 }
 #Work a{
+    border: solid 2px white;
+    padding: 5px;
     font-family: 'Josefin Sans', sans-serif;
     color:white;
 }
@@ -99,9 +101,10 @@ body {
     border: solid 3px white;
     margin: 0 auto;
     width: 70%;
-
 }
-
+#work .link{
+    border: solid 2px red;
+}
 /******Section*******************************/
 
 #sectionHead{
@@ -127,7 +130,6 @@ body {
     position: relative;
     height: 500px;
     padding-top: 8%;
-    padding-bottom: 25%;
     top: 0px;
     color: white;
     text-align: center;
@@ -150,7 +152,7 @@ body {
 #Contact{
     background-color: #3A4B4F;
     position: relative;
-    height: 600px;
+    height: 500px;
     padding-top: 8%;
     top: 0px;
     color: white;
@@ -175,7 +177,7 @@ body {
 }
 .contactImgs p{
     margin-top: 28%;
-    margin-bottom: 25.8%;
+    
     line-height: 50px;
     font-size: 14px;
     color: gray;
