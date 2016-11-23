@@ -57,15 +57,15 @@ body {
 }
 #About img{
     position: relative;
-    width: 225px;
-    height: 200px;
+    width: 100%;
     border-radius: 12px;
 }
-.aboutContainer{
-    padding-left: 45px;
+#About .aboutContainer{
+    padding-left: 16px;
 }
 /*Work*/
 /*********************************************************************************************/
+
 #Work{
     background-color: #54686C;
     position: relative;
@@ -73,7 +73,7 @@ body {
     top:0px;
     margin-top: 0px; 
     min-height: 400px;
-    padding-top: 6%;
+    padding-top: 8%;
     padding-bottom: 23%;
     top: 0px;
     text-align: center;
@@ -84,6 +84,29 @@ body {
     letter-spacing: 3px;
     text-decoration: none;
 }
+#Work img{
+    border: solid 3px white;
+    margin: 0 auto;
+    height: 350px;
+    width: 70%;
+}
+#Work a{
+    border: solid 2px white;
+    padding: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:white;
+}
+#Work .contentContainer{
+    height: 60%;
+    border: solid 3px white;
+    margin: 0 auto;
+    width: 70%;
+}
+#work .link{
+    border: solid 2px red;
+}
+/******Section*******************************/
+
 #sectionHead{
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 40px;
@@ -99,45 +122,29 @@ body {
     margin-bottom: 8px;
     width: 80%;
 }
+
 /************ Skills Section **************/
 
 #Skills{
     background-color: #6E8A77;
     position: relative;
     height: 500px;
-    padding-top: 6%;
-    padding-bottom: 25%;
+    padding-top: 8%;
     top: 0px;
     color: white;
     text-align: center;
 }
-#Skills hr{
-    border-color: white;
-}
-#Skills img{
-    display: inline-block;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-}
-.logoHold{
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-bottom: 40px;
-}
+
 #Skills p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px; 
     padding-top: 15%;
-    font-size: 80%;
     color: white;
     font-weight: 400;
     letter-spacing: 2px;
 }
-.pContain{
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
+
+
 
 /*Contact*/
 /*************************************************************************************/
@@ -145,16 +152,14 @@ body {
 #Contact{
     background-color: #3A4B4F;
     position: relative;
-    height: 600px;
-    padding-top: 100px;
+    height: 500px;
+    padding-top: 8%;
     top: 0px;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
 }
-#contactLogoHolder{
-    margin-top: 40px;
-}
+
 #Contact img{
     display: inline-block;
 }
@@ -172,7 +177,7 @@ body {
 }
 .contactImgs p{
     margin-top: 28%;
-    margin-bottom: 25.8%;
+    
     line-height: 50px;
     font-size: 14px;
     color: gray;
