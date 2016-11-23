@@ -38,9 +38,11 @@ angular.module('appCtrl', [])
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length + 1;
     slides.push({
-      image: ['public/css/images/pokemon-phaser.jpg', 'public/css/images/pack-that.png','public/css/images/pokemon-phaser.jpg', 'public/css/images/pack-that.png'][slides.length % 4],
+      image: ['public/css/images/fbpic.png', 'public/css/images/pack-that.png','public/css/images/pokemon-phaser.jpg', 'public/css/images/portfolio.png'][slides.length % 4],
       text: ['FACEBOOK COMMENT GENERATOR','PACK THAT','POKEMON PHASER','PORTFOLIO'][slides.length % 4],
-      link:["https://www.google.com","https://repl.it/languages/javascript","https://www.google.com","https://www.google.com"][slides.length % 4],
+      content: ['FACEBOOK COMMENT GENERATOR','PACK THAT','POKEMON PHASER','PORTFOLIO'][slides.length % 4],
+      code:["https://github.com/hayes9321/facebook2","https://github.com/hayes9321/mean_hackathon","https://github.com/hayes9321/project-1","https://github.com/hayes9321/portfolioV1"][slides.length % 4],
+      demo:["#","#","#","#"][slides.length % 4],
       id: currIndex++
     });
   };
