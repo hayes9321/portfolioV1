@@ -66,6 +66,7 @@ body {
 }
 /*Work*/
 /*********************************************************************************************/
+
 #Work{
     background-color: #54686C;
     position: relative;
@@ -84,6 +85,20 @@ body {
     letter-spacing: 3px;
     text-decoration: none;
 }
+#Work img{
+    margin: 0 auto;
+    width: 58%;
+}
+#Work .contentContainer{
+    height: 175px;
+    border: solid 3px white;
+    margin: 0 auto;
+    width: 58%;
+
+}
+
+/******Section*******************************/
+
 #sectionHead{
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 40px;
@@ -99,6 +114,7 @@ body {
     margin-bottom: 8px;
     width: 80%;
 }
+
 /************ Skills Section **************/
 
 #Skills{

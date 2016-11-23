@@ -11,12 +11,13 @@
 			  <div style="height: 400px">
 			    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
 			      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-			        <img ng-src="{{slide.image}}" style="margin:auto; height:400px; ">
-			        <div class="carousel-caption" style="background-color: rgba(255,255,255,0.5); width:700px;" >
+			        <img ng-src="{{slide.image}}">
+			        <!-- <div class="carousel-caption" style="margin-top:1000px; color: red;background-color: rgba(255,255,255,0.5); height: 150px; width:700px;" > -->
+			        	<div class="contentContainer">
 			          <h4>{{slide.text}}</h4>
 			          <p></p>
-			          <button><a href={{slide.link}} >Click here</a></button>
-			        </div>
+			          <button><a href={{slide.link}}>Click here</a></button>
+			        	</div>
 			      </div>
 			    </div>
 			  </div>
