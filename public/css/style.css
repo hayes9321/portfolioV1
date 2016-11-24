@@ -62,16 +62,17 @@ body {
     border-radius: 12px;
 }
 #About p{
+    color: white;
     margin: 0 auto;
     font-size: 20px;
     width: 100%;
     padding-left: 16%;
 }
 #About a{
-    font-size: 
+    color:blue;
 }
+
 #About .imageContainer  {
-    background-color: yellow;
     height: 250px;
     width: 250px;
     margin: 0 auto;
