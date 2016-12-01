@@ -80,11 +80,9 @@ body {
     padding-left: 16%;
 }
 
-/* Custom, iPhone Retina */ 
+
 @media(max-width: 500px) {
-    #About{
-        width: 100%;
-    }
+
     #About p{
         padding-left: 0px;
         color: white;
