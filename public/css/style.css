@@ -84,10 +84,12 @@ body {
     color: rgb(60,60,60);
 }
 .imgContainer{
+    height: 300px;
     background-image: url(./images/Color.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
-    height: 250px;
+    background-position: center;
+    padding-top: 2%;
     width: 40%;
     border-radius: 12px;
     border: 1px solid black;
@@ -100,8 +102,47 @@ body {
     padding-left: 16%;
 }
 
+@media(max-width:992px){
+    #About{
+        width: 100%;
+    }
+    #About p{
+        padding-left: 0px;
+        padding-top: 10px;
+        color: white;
+        font-size: 15pt;
+    }
+    .imgContainer{
+        float: left;
+        width: 50%;
+    }
+    .pContainer{
+        float: right;
+        width: 50%;
+    }
 
-@media(max-width: 500px) {
+}
+@media(max-width:768px){
+    #About{
+        width: 100%;
+    }
+    #About p{
+        padding-left: 0px;
+        padding-top: 10px;
+        color: white;
+        font-size: 15pt;
+    }
+    .imgContainer{
+        float: left;
+        width: 50%;
+    }
+    .pContainer{
+        float: right;
+        width: 50%;
+    }
+}
+
+@media(max-width: 576px) {
     #About{
         width: 100%;
     }
@@ -114,23 +155,13 @@ body {
     .imgContainer{
         width: 100%;
     }
-}
-/*    #About .imgContainer{
-        background-image: url(./images/Color.jpg); 
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        border-radius: 12px;
-        border: 1px solid black;
-        padding-top: 5%;
-        height: 100%;
-        width: 80%;
-        margin-left: 10%;
-        text-align: center; 
+    .pContainer{
+        width: 100%;
     }
-    #About .pContainer{
-        text-align: center;
-    }
+
+
 }
+
 
 /*Work*/
 /*********************************************************************************************/
