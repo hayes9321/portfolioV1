@@ -356,13 +356,37 @@ body {
 }
 #Skills p{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 24px; 
+    font-size: 21px; 
     padding-top: 15%;
     color: white;
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
-
+#Skills .skillContainer{
+    width: 100%;
+}
+@media(max-width:768px){
+    #sectionHead {
+        padding-top: 0px;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+    }
+    #sectionHead hr{
+        margin-top: 0px;
+        width: 80%;
+    }
+    #Skills{
+        text-align: center;
+    }
+    #Skills .skillContainer{
+        width: 100%;
+    }
+    #Skills p{
+        padding-top: 10px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 15pt;
+    }
+}
 @media(max-width: 576px){
     #sectionHead {
         padding-top: 0px;
@@ -380,10 +404,6 @@ body {
         padding-top: 10px;
         font-family: 'Josefin Sans', sans-serif;
         font-size: 15pt;
-    }
-    #Skills .skillContainer {
-        width: 93%;
-        padding-left:8%; 
     }
 }
 @media(max-width : 320px) {
