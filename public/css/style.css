@@ -356,27 +356,17 @@ body {
 }
 #Skills p{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 21px; 
+    font-size: 24px; 
     padding-top: 15%;
     color: white;
-    font-weight: 400;
     letter-spacing: 1px;
 }
 #Skills .skillContainer{
     width: 100%;
 }
 @media(max-width:768px){
-    #sectionHead {
-        padding-top: 0px;
-        margin-bottom: 20px;
-        letter-spacing: 3px;
-    }
-    #sectionHead hr{
-        margin-top: 0px;
-        width: 80%;
-    }
     #Skills{
-        text-align: center;
+        height: 550px;
     }
     #Skills .skillContainer{
         width: 100%;
@@ -384,37 +374,21 @@ body {
     #Skills p{
         padding-top: 10px;
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 15pt;
+        font-size: 24px;
     }
 }
 @media(max-width: 576px){
-    #sectionHead {
-        padding-top: 0px;
-        margin-bottom: 20px;
-        letter-spacing: 3px;
-    }
-    #sectionHead hr{
-        margin-top: 0px;
-        width: 80%;
-    }
     #Skills{
-        text-align: center;
+        height: 500px;
     }
     #Skills p{
-        padding-top: 10px;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 15pt;
+        font-size: 18px;
     }
 }
 @media(max-width : 320px) {
-    #Skills p{
-        padding-top: 10px;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 11pt;
-    }
     #Skills .skillContainer {
         width: 95%;
-        padding-left: 4%; 
+        padding-left: 3%; 
     }
 }
 
