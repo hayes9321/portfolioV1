@@ -3,26 +3,21 @@
 		<h2>RECENT WORK</h2>
 			<hr>
 		<h4 class="hidden-xs">CLICK TO VIEW CODE OR VIEW PROJECT</h4>
-		<h4 class="visible-xs">CLICK TO VIEW</h4>
+		<h4 class="visible-xs">CLICK PICTURE TO VIEW</h4>
 	</div>
-
-	<div class="container-fluid">
-		
-			<div ng-controller="CarouselDemoCtrl">
-			    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-			      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-			        <a href="{{slide.code}}" class="imgLink"><img ng-src="{{slide.image}}"></a>
-
-			        <!-- <div class="carousel-caption" style="margin-top:1000px; color: red;background-color: rgba(255,255,255,0.5); height: 150px; width:700px;" > -->
-			        <div class="contentContainer">
-			        	<h4 class="visible-xs">{{slide.text}}</h4>
-			          	<p class="hidden-xs">{{slide.content}}</p>
-			         	<a href={{slide.code}} class="link hidden-xs">Code</a>
-			          	<a href={{slide.demo}} class="link hidden-xs">Demo</a>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
+		<div ng-controller="CarouselDemoCtrl">
+		    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+		      <div class="slideCount" uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+		        <a href="{{slide.code}}" class="imgLink"><img ng-src="{{slide.image}}"></a>
+		        <div class="contentContainer">
+		        	<h4 class="visible-xs">{{slide.text}}</h4>
+		          	<div><p class="hidden-xs">{{slide.content}}</p></div>
+		         	<a href={{slide.code}} class="link hidden-xs">View The Code</a>
+		          	<a href={{slide.demo}} class="link hidden-xs">View The Demo</a>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
 	</div>
 	<div class="visible-xs bottomSpacer"></div>
 </section>
