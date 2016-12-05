@@ -1,24 +1,25 @@
 <section id="Work">
-	<div class="col-xs-8 col-sm-8 col-md-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-3" id="sectionHead">
+	<div id="sectionHead">
 		<h2>RECENT WORK</h2>
 			<hr>
-		<h4>CLICK TO VIEW CODE OR VIEW PROJECT</h4>
+		<h4 class="hidden-xs">CLICK TO VIEW CODE OR VIEW PROJECT</h4>
+		<h4 class="visible-xs">CLICK TO VIEW</h4>
 	</div>
 
 	<div class="container-fluid">
-		<div class="col-xs-12 col-sm-12 col-md-12">
+		
 			<div ng-controller="CarouselDemoCtrl">
-			  <div style="height: 400px">
 			    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
 			      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-			        <img ng-src="{{slide.image}}">
+			        <a href="{{slide.code}}" class="imgLink"><img ng-src="{{slide.image}}"></a>
+
 			        <!-- <div class="carousel-caption" style="margin-top:1000px; color: red;background-color: rgba(255,255,255,0.5); height: 150px; width:700px;" > -->
-			        	<div class="contentContainer">
-			          <h4>{{slide.text}}</h4>
-			          <p>{{slide.content}}</p>
-			         <a href={{slide.code}} class="link">Code</a>
-			          <a href={{slide.demo}} class="link">Demo</a>
-			        	</div>
+			        <div class="contentContainer">
+			        	<h4 class="visible-xs">{{slide.text}}</h4>
+			          	<p class="hidden-xs">{{slide.content}}</p>
+			         	<a href={{slide.code}} class="link hidden-xs">Code</a>
+			          	<a href={{slide.demo}} class="link hidden-xs">Demo</a>
+			        </div>
 			      </div>
 			    </div>
 			  </div>

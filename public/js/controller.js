@@ -15,18 +15,6 @@ angular.module('appCtrl', [])
     var contact = angular.element(document.getElementById('Contact'));
       $document.scrollToElement(contact, 0, duration);
     };
-
-//handle images hiding and showing on demo screen
-   angular.element(document).ready(function(){
-    $scope.imgClass = []
-    $scope.imgClass.push('hide'); //on document load, hide image until mouseover event 
-      $scope.showBigImg = function (imgsrc){ //handle class change for css animations
-          $scope.imgClass.pop('hide') && $scope.imgClass.push('show');
-        }
-      $scope.hideBigImg = function(imgsrc){ //re-hide image until mouseover event happens again
-          $scope.imgClass.pop('show') && $scope.imgClass.push('hide');
-        }
-    });
 }])
 .controller('CarouselDemoCtrl', function ($scope) {
   $scope.myInterval = 5000;
@@ -38,7 +26,7 @@ angular.module('appCtrl', [])
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length + 1;
     slides.push({
-      image: ['public/css/images/fbpic.png', 'public/css/images/pack-that.png','public/css/images/pokemon-phaser.jpg', 'public/css/images/portfolio.png'][slides.length % 4],
+      image: ['public/css/images/fbpic.jpg', 'public/css/images/pack-that.png','public/css/images/pokemon-phaser.jpg', 'public/css/images/portfolio.png'][slides.length % 4],
       text: ['FACEBOOK COMMENT GENERATOR','PACK THAT','POKEMON PHASER','PORTFOLIO'][slides.length % 4],
       content: ['Facebook Comment Generator is a app that utilizes Facebook’s graph API. The app uses a Markov chain algorithm to generate a random post you might say, based on post you have made through Facebook.',
       'Pack That is a collaborative app built by two other developers and myself. Based on how long of a trip you are planning or how much weight you want to carry, pack that will calculate the current weight of your pack, so you can focus on planning not math.',
