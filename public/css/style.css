@@ -93,6 +93,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 2%;
+    margin-left: 8%; 
     width: 40%;
     border-radius: 12px;
     border: 1px solid black;
@@ -118,6 +119,7 @@ body {
     .imgContainer{
         float: left;
         width: 50%;
+        margin-left: 0px;
     }
     .pContainer{
         float: right;
@@ -443,7 +445,7 @@ body {
     font-weight: 400;
     letter-spacing: 2px;
 }
-@media(max-width: 500px){
+@media(max-width: 576px){
     #Contact{
         height: 300px;
     }
@@ -451,10 +453,21 @@ body {
         text-align: center;
         margin: 0 auto;
     }
+    .contactImgs img{
+    height: 40px;
+    width: 40px;
+    margin-top: 27%;
+    margin-bottom: 27%;
+    }
 }
-
-
-
+@media(min-width: 300px){
+    .contactImgs img{
+    height: 33px;
+    width: 33px;
+    margin-top: 33%;
+    margin-bottom: 33%;
+    }
+}
 .fill{
     background-color: rgb(60,60,60);
 }
