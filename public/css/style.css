@@ -93,6 +93,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 2%;
+    margin-left: 8%; 
     width: 40%;
     border-radius: 12px;
     border: 1px solid black;
@@ -118,6 +119,7 @@ body {
     .imgContainer{
         float: left;
         width: 50%;
+        margin-left: 0px;
     }
     .pContainer{
         float: right;
@@ -356,27 +358,17 @@ body {
 }
 #Skills p{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 21px; 
+    font-size: 24px; 
     padding-top: 15%;
     color: white;
-    font-weight: 400;
     letter-spacing: 1px;
 }
 #Skills .skillContainer{
     width: 100%;
 }
 @media(max-width:768px){
-    #sectionHead {
-        padding-top: 0px;
-        margin-bottom: 20px;
-        letter-spacing: 3px;
-    }
-    #sectionHead hr{
-        margin-top: 0px;
-        width: 80%;
-    }
     #Skills{
-        text-align: center;
+        height: 550px;
     }
     #Skills .skillContainer{
         width: 100%;
@@ -384,37 +376,21 @@ body {
     #Skills p{
         padding-top: 10px;
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 15pt;
+        font-size: 24px;
     }
 }
 @media(max-width: 576px){
-    #sectionHead {
-        padding-top: 0px;
-        margin-bottom: 20px;
-        letter-spacing: 3px;
-    }
-    #sectionHead hr{
-        margin-top: 0px;
-        width: 80%;
-    }
     #Skills{
-        text-align: center;
+        height: 500px;
     }
     #Skills p{
-        padding-top: 10px;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 15pt;
+        font-size: 18px;
     }
 }
 @media(max-width : 320px) {
-    #Skills p{
-        padding-top: 10px;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 11pt;
-    }
     #Skills .skillContainer {
         width: 95%;
-        padding-left: 4%; 
+        padding-left: 3%; 
     }
 }
 
@@ -469,7 +445,7 @@ body {
     font-weight: 400;
     letter-spacing: 2px;
 }
-@media(max-width: 500px){
+@media(max-width: 576px){
     #Contact{
         height: 300px;
     }
@@ -477,10 +453,21 @@ body {
         text-align: center;
         margin: 0 auto;
     }
+    .contactImgs img{
+    height: 40px;
+    width: 40px;
+    margin-top: 27%;
+    margin-bottom: 27%;
+    }
 }
-
-
-
+@media(min-width: 300px){
+    .contactImgs img{
+    height: 33px;
+    width: 33px;
+    margin-top: 33%;
+    margin-bottom: 33%;
+    }
+}
 .fill{
     background-color: rgb(60,60,60);
 }
