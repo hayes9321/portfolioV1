@@ -16,18 +16,18 @@
 <body ng-controller="HomeCtrl">
     <div ng-include="'public/views/navbar.html'"></div>
 
-    <div id="Video"  data-vide-bg="mp4: public/video/portfolio_cond.mp4, poster: public/css/images/forest.jpg" data-vide-options="posterType: jpg, loop: true, muted: true, position: 50% 50%">
+    <div id="Video" class="hidden-xs" data-vide-bg="mp4: public/video/portfolio_cond.mp4, poster: public/css/images/forest.jpg" data-vide-options="posterType: jpg, loop: true, muted: true, position: 50% 50%">
       <div class="welcomeText">
         <div class="name">TRAVIS HAYES</div>
         <div class="description">Full-Stack Developer.</div>
       </div>
     </div>
-<!--     <div class="visible-xs vidImg">
+    <div class="visible-xs vidImg">
       <div class="welcomeText">
         <div class="name">TRAVIS HAYES</div>
         <div class="description">Full-Stack Developer.</div>
       </div>
-    </div> -->
+    </div>
 
 	  <ng-view></ng-view>
    
