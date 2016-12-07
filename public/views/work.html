@@ -8,7 +8,7 @@
 		<div ng-controller="CarouselDemoCtrl">
 		    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
 		      <div class="slideCount" uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-		        <a href="{{slide.code}}" class="imgLink"><img ng-src="{{slide.image}}"></a>
+		        <a href="{{slide.demo}}" class="imgLink"><img ng-src="{{slide.image}}"></a>
 		        <div class="contentContainer">
 		        	<h4 class="visible-xs">{{slide.text}}</h4>
 		          	<div><p class="hidden-xs">{{slide.content}}</p></div>
