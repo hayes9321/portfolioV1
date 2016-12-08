@@ -11,10 +11,10 @@
   <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'" ng-click="navCollapsed = true">      
     <ul class="nav navbar-nav col-sm-12">
       <li class="col-sm-2"><a href="/#!/" ng-click="toTheTop()" du-scrollspy>HOME</a></li>
-      <li class="col-sm-2"><a href="#About" du-smooth-scroll du-scrollspy>ABOUT</a></li>
-      <li class="col-sm-2"><a href="#Work" du-smooth-scroll du-scrollspy>WORK</a></li>
-      <li class="col-sm-2"><a href="#Skills" du-smooth-scroll du-scrollspy>SKILLS</a></li>          
-      <li class="col-sm-2"><a href="#Contact" du-smooth-scroll du-scrollspy>CONTACT</a></li> 
+      <li class="col-sm-2"><a href="#About" ng-click="navCollapsed = true" du-smooth-scroll du-scrollspy>ABOUT</a></li>
+      <li class="col-sm-2"><a href="#Work" ng-click="navCollapsed = true" du-smooth-scroll du-scrollspy>WORK</a></li>
+      <li class="col-sm-2"><a href="#Skills" ng-click="navCollapsed = true" du-smooth-scroll du-scrollspy>SKILLS</a></li>          
+      <li class="col-sm-2"><a href="#Contact" ng-click="navCollapsed = true" du-smooth-scroll du-scrollspy>CONTACT</a></li> 
       <li class="col-sm-2"><a href="https://resume.creddle.io/resume/4fbwk5jihvg" target="_blank">RESUME</a></li>
     </ul>
   </div>
