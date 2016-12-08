@@ -33,7 +33,7 @@ angular.module('appCtrl', [])
       'Pokemon Phaser is a fun game that was built with the phaser framework. The goal of the game is to pop the jiggly puffs in the game until there are no more left. ',
       'I built this portfolio as a single page angular app. The portfolio is a place where I can showcase some of my work and let people see some of the projects I have developed.'][slides.length % 4],
       code:["https://github.com/hayes9321/facebook2","https://github.com/hayes9321/mean_hackathon","https://github.com/hayes9321/project-1","https://github.com/hayes9321/portfolioV1"][slides.length % 4],
-      demo:["http://fb-site.herokuapp.com/","#","#","#"][slides.length % 4],
+      demo:["http://fb-site.herokuapp.com/","https://base-weight.herokuapp.com/","https://pokemon-phaser.herokuapp.com/","https://hayes9321.github.io/portfolioV1/#!/"][slides.length % 4],
       id: currIndex++
     });
   };
