@@ -1,4 +1,4 @@
-
+ 
 body {
 	background-color: #6E7B8B;
 }
@@ -530,7 +530,7 @@ body {
     background-color: #2f3d40;
     position: relative;
     height: 450px;
-    padding-top: 8%;
+    padding-top: 12%;
     padding-bottom: 23%; 
     top: 0px;
     color: white;
@@ -581,11 +581,8 @@ body {
 }
 @media(max-width: 576px){
     #Contact{
-        height: 300px;
-    }
-    #Contact h2{
-        text-align: center;
-        margin: 0 auto;
+        padding-top: 16%;
+        height: 400px;
     }
     .contactImgs img{
         height: 40px;
@@ -595,6 +592,9 @@ body {
     }
 }
 @media(max-width: 372px){
+    #Contact{
+        padding-top: 20%;
+    }
     .contactImgs img{
         height: 30px;
         width: 30px;
